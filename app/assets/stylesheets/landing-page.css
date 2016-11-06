@@ -37,11 +37,11 @@ h6 {
   }
 
 .intro-header {
-    padding-top: 5%; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 5%;
     text-align: center;
     color: #f8f8f8;
-    /* background: url(../assets/intro-banner/squashes.png) no-repeat center center; */
+    background: url("../assets/squashes.png") no-repeat center center;
     /* background-size: cover; */
 }
 
