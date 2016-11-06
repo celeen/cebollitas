@@ -4,6 +4,7 @@
     <title>Pilsen Community Market</title>
     <%= csrf_meta_tags %>
     <%= render 'application/favicon' %>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -34,18 +35,29 @@
       </div>
     </nav>
 
-      <%= yield %>
+      <%= content_for?(:pages) ? yield(:pages) : yield %>
     <!-- Footer -->
     <footer class="footer">
         <div class="container center">
             <div class="row">
                 <div class="col-lg-12">
-                  <div class="col-sm-6 col-sm-offset-3 text-center">
+                  <div class="col-sm-8 col-sm-offset-2 text-center">
                     <ul class="list-inline">
                       <%= render "partials/nav" %>
                     </ul>
-                    <!-- <p class="copyright text&#45;muted small">Copyright &#38;copy; Your Company 2014. All Rights Reserved</p> -->
-                    </div
+                    <div class="fine-print small">
+                    <ul class="list-inline copyright text-muted">
+                      <li>
+                        <%= link_to "Terms and Conditions", terms_path %>
+                      </li>
+                      <li class="menu-divider">&sdot;</li>
+                      <li>
+                        <%= link_to "Privacy Policy", privacy_policy_path %>
+                      </li>
+                    </ul>
+                    <p class="copyright text-muted small">website design adapted from <%= link_to "startbootstrap.com", "https://startbootstrap.com/template-overviews/landing-page/", target: "_blank" %></p>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

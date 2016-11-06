@@ -23,7 +23,7 @@ h6 {
   color: #000000;
 }
 
-.menu-divider {
+.navbar .menu-divider {
   padding: 15px;
 }
 
@@ -167,7 +167,7 @@ h6 {
 }
 
 footer {
-    padding: 15px 0;
+    padding: 20px 0;
     background-color: #f8f8f8;
 }
 
@@ -175,7 +175,16 @@ footer ul {
   margin: 0;
 }
 
-p.copyright {
+.copyright a {
+  color: #777;
+  decoration: none;
+}
+
+.copyright a:hover {
+  color: #777
+}
+
+.fine-print {
     margin: 15px 0 0;
 }
 

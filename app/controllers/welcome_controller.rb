@@ -12,7 +12,4 @@ class WelcomeController < ApplicationController
 
     @next_market = NextMarket.new
   end
-
-  def donate
-  end
 end
