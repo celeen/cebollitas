@@ -59,4 +59,8 @@ class NextMarket
       third_sunday_of_month(today.month + 1)
     end
   end
+
+  def map_location
+    it_is_summer? ? "Pilsen+Farmers+Market" : "Honky+Tonk"
+  end
 end
