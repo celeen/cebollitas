@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cebollitas</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+      <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand topnav" href="#"><%= image_tag("chicken", height: '35') %></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <%= render "partials/nav" %>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+      <%= yield %>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container center">
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <ul class="list-inline">
+                      <%= render "partials/nav" %>
+                    </ul>
+                    <!-- <p class="copyright text&#45;muted small">Copyright &#38;copy; Your Company 2014. All Rights Reserved</p> -->
+                    </div
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
